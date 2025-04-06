@@ -8,8 +8,7 @@
   <script src="js/script.js" defer></script>
 </head>
 <body class="bg-purple-100 text-gray-800 min-h-screen flex flex-col">
-
-  
+<!-- Top bar -->
   <header class="bg-purple-300 text-black p-4">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
       <h1 class="text-2xl font-bold mb-2 md:mb-0">Pill Pilot</h1>
@@ -29,13 +28,13 @@
   
   <main class="flex-grow max-w-4xl mx-auto mt-10 px-4">
     
-    
+    <!-- Map -->
     <div class="bg-white p-6 rounded-lg shadow-md mb-6">
       <h2 class="text-2xl font-semibold text-purple-800 mb-4">Map of Transportation Options</h2>
       <div id="map" class="w-full h-64 bg-gray-200 rounded"></div>
     </div>
 
-    
+    <!-- Form -->
     <div class="bg-white p-6 rounded-lg shadow-md">
       <h2 class="text-2xl font-semibold text-purple-800 mb-4">Book a Ride to Your Appointment</h2>
       <form id="rideForm" action="#" method="POST" class="space-y-4" onsubmit="showSuccessMessage(event)">
@@ -83,7 +82,7 @@
     </div>
   </div>
 
-
+<!-- Footer -->
   <footer class="bg-purple-300 text-black text-center py-4">
     <p>&copy; 2025 Pill Pilot. All rights reserved.</p>
   </footer>
