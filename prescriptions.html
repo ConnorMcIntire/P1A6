@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prescriptions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-100 text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-purple-300 text-black p-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <h1 class="text-2xl font-bold mb-2 md:mb-0">Pill Pilot</h1>
+      <nav class="flex flex-wrap gap-4 items-center">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="transportation.html" class="hover:underline">Transportation</a>
+        <a href="prescriptions.html" class="hover:underline font-semibold underline">Prescriptions</a>
+        <a href="appointments.html" class="hover:underline">Appointments</a>
+        <a href="account.html" class="hover:underline">My Account</a>
+        <a href="help.html" class="hover:underline">Help</a>
+        <a href="login.html" class="bg-white text-blue-600 px-3 py-1 rounded hover:bg-gray-200 font-medium">Login</a>
+        <a href="register.html" class="bg-white text-blue-600 px-3 py-1 rounded hover:bg-gray-200 font-medium">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <main class="flex-grow max-w-3xl mx-auto mt-10 px-4">
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-2xl font-semibold text-purple-800 mb-6">Your Prescriptions</h2>
+
+      
+      <div class="space-y-6">
+        <div class="bg-purple-600 p-4 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-black">Amoxicillin</h3>
+          <p class="text-black"><strong>Prescription Date:</strong> 09/01/2025</p>
+          <p class="text-black"><strong>Dosage:</strong> 500 mg, 3 times a day</p>
+          <p class="text-black"><strong>Refills:</strong> 1</p>
+        </div>
+
+        <div class="bg-purple-300 p-4 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-purple-800">Ibuprofen</h3>
+          <p class="text-black"><strong>Prescription Date:</strong> 09/15/2025</p>
+          <p class="text-black"><strong>Dosage:</strong> 200 mg, every 4-6 hours as needed</p>
+          <p class="text-black"><strong>Refills:</strong> 0</p>
+        </div>
+
+        <div class="bg-purple-600 p-4 rounded-lg shadow-sm">
+          <h3 class="text-xl font-semibold text-purple-800">Lisinopril</h3>
+          <p class="text-black"><strong>Prescription Date:</strong> 10/01/2025</p>
+          <p class="text-black"><strong>Dosage:</strong> 10 mg, once daily</p>
+          <p class="text-black"><strong>Refills:</strong> 3</p>
+        </div>
+
+        
+      </div>
+    </div>
+  </main>
+
+  
+  <footer class="bg-purple-300 text-black text-center py-4">
+    <p>&copy; 2025 Pill Pilot. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
