@@ -9,3 +9,7 @@ function showSuccessMessage(event) {
   function closeSuccessModal() {
     document.getElementById('successModal').classList.add('hidden'); 
   }
+
+  document.getElementById('editPrescriptionsBtn').addEventListener('click', function() {
+    document.getElementById('editPrescriptionModal').classList.remove('hidden'); 
+  });

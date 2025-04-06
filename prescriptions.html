@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prescriptions</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js" defer></script>
 </head>
 <body class="bg-purple-100 text-gray-800 min-h-screen flex flex-col">
 
@@ -53,12 +54,45 @@
           <p class="text-black"><strong>Refills:</strong> 3</p>
         </div>
 
-        <button class="mt-6 inline-block px-6 py-2 bg-purple-600 text-black font-semibold rounded-lg hover:bg-purple-700 " disabled>
+        <button id="editPrescriptionsBtn" class="mt-6 inline-block px-6 py-2 bg-purple-600 text-black font-semibold rounded-lg hover:bg-purple-700 ">
             Edit Prescriptions
-          </button>
+        </button>
       </div>
     </div>
   </main>
+
+  <!-- Modal Form -->
+  <div id="editPrescriptionModal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white p-6 rounded-lg shadow-md max-w-sm w-full">
+      <h3 class="text-2xl font-semibold text-purple-800 mb-4">Edit Prescription</h3>
+      <form id="prescriptionForm" class="space-y-4">
+        <div>
+          <label for="prescriptionName" class="block text-gray-700 font-semibold">Prescription Name</label>
+          <input type="text" id="prescriptionName" name="prescriptionName" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter prescription name">
+        </div>
+
+        <div>
+          <label for="prescriptionDate" class="block text-gray-700 font-semibold">Prescription Date</label>
+          <input type="date" id="prescriptionDate" name="prescriptionDate" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+
+        <div>
+          <label for="dosage" class="block text-gray-700 font-semibold">Dosage</label>
+          <input type="text" id="dosage" name="dosage" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter dosage instructions">
+        </div>
+
+        <div>
+          <label for="refills" class="block text-gray-700 font-semibold">Refills</label>
+          <input type="number" id="refills" name="refills" required class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter number of refills">
+        </div>
+
+        <div class="flex justify-between">
+          <button type="button" onclick="closeModal()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600">Cancel</button>
+          <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-purple-300 text-black text-center py-4">
